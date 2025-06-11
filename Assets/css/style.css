@@ -1,0 +1,21 @@
+header{
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../Images/bg.jpg);
+    background-color: tomato;
+    
+}
+.icon{
+    width: 2rem;
+    height: 2rem;
+    /* background-color: tomato; */
+    /* > عشان تبقي مربع كدا 
+    . بس هنا في مشكله الايكون فوق مش في النص 
+    . نروح لل html >  و نعمل الاتي 
+    d-flex justify-content-center align-items-center
+    > كدا بقت ايكون موجوده جوه مربع 
+    انت بقي لو رحت للمربع ده و كتيتله 
+    > rounded-circle : هيبقي في النص تماما 
+    */
+
+}
