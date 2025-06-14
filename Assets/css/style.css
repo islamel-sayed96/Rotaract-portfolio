@@ -1,3 +1,9 @@
+:root{
+    --main-color:#4726e1;
+}
+.text-main{
+    color: var(--main-color);
+}
 header{
     background-size: cover;
     background-position: center center;
@@ -22,3 +28,22 @@ header{
 /* .logo{
     width: 180px;
 } */
+
+.title h2{
+    font-size: 5rem;
+    font-weight: 900;
+    color: gray;
+    letter-spacing: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* الفراغات ما بين كل حرف و التاني  */
+}
+.title h3{
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: black;
+    letter-spacing: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#about{
+    background-image: url(../Images/light_dot.jpg);
+}

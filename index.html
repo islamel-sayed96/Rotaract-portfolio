@@ -32,10 +32,10 @@
                     <!-- me-auto > margin end auto > اخلي اليمين فاضي
                      > ms-auto > خلي اليسار فاضي -->
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">About</a>
+                    <a class="nav-link active" aria-current="page" href="#about">About</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
@@ -72,7 +72,7 @@
             </div>
     </nav>
 
-    <header class="vh-100 d-flex align-items-center">
+    <header id="home" class="vh-100 d-flex align-items-center">
         <div class="header-content  ps-4 text-white">
             <!-- bg-info -->
             <h1 >We Are Professional</h1>
@@ -121,7 +121,40 @@
         </div>
     </header>
 
+    <section id="about" class="py-5">
+        <div class="title  position-relative d-flex justify-content-center align-items-center">
+            <!-- bg-danger -->
+            <h2 class=" m-0">ABOUT</h2>
+            <!-- bg-warning -->
+            <!-- m-0 > عشان اشيل اي مارجين موجود لان منغيره في البوكس موديل تحت هنلاقي مارجين 8 و دا هيعملنا مشاكل لما نيجي نعمل مارجين اوتو  -->
+            <h3 class=" m-0 position-absolute">ABOUT</h3>
+            <!-- bg-info -->
+            <!-- هنا بعد ال position absolute 
+            انا مش هديها top or bottom or anything 
+            لا انا هتحكم بيها عن طريق ال display flex
+            ف هطلع للاب و اخليه d-flex justify-content-center align-items-center -->
+        </div>
+            <p class="text-muted text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta.</p>
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="col-md-4">
+                        <img src="Assets/Images/me.jpg" class="shadow-lg w-100" alt="me">
+                    </div>
+                    <div class="col-md-7 offset-md-1 d-flex align-items-center">
+                        <!-- offset-1 > سيبلي عمود قبليه / دايما بتتاخد من علي شمال الديف مش اليمين -->
+                        <div>
+                            <h5 class="text-main fw-bold">Robbin Steel</h5>
+                            <p class="lead text-muted">Creative UI/UX Designer , Developer .</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, mollitia voluptas! Quae saepe adipisci, eum fugit eius dolor.
+                                Blanditiis, cupiditate dolore! Ipsa perspiciatis excepturi quae illum magni reiciendis enim nulla magnam eveniet labore.
+                                Exercitationem iste dolore,
+                                ipsum libero, dolores consequuntur odit deleniti id temporibus natus ab, facilis veritatis. Similique, delectus.</p>
+                        </div>
 
+                    </div>
+                </div>
+            </div>
+    </section>
     <script src="Assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
