@@ -47,3 +47,31 @@ header{
 #about{
     background-image: url(../Images/light_dot.jpg);
 }
+.client-feedback{
+    border: solid 4px #f1f1f1;
+}
+.client-img{
+    width: 90px;
+    border-radius: 50%;
+    border: solid 4px #f4f4f4;
+    transform: translateY(50%);
+}
+.client-feedback h6{
+    position: relative;
+}
+.client-feedback h6::after{
+    content: '';
+    background-color: var(--main-color);
+    height: 2px;
+    width: 10%;
+    position: absolute;
+    left: 45%;
+    /* طيب ليه 45% عشان انا بقولها تبعد عن شمالها 45 و هي 10 يبقي كدا كام ؟
+    55% 
+    طيب يتفضل كام 45% 
+    دول اللي علي يمينها 
+    و متقلقش هي في الريسبونسف ذي الفل */
+    /* top: 0; */
+    top: 100%;
+    /* 100% عشان تنزل تحت  */
+}
