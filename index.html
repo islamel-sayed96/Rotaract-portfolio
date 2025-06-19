@@ -44,7 +44,7 @@
                     <a class="nav-link active" aria-current="page" href="#">Gallery</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Testimonial</a>
+                    <a class="nav-link active" aria-current="page" href="#testimonial">Testimonial</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="#">Join Us</a>
@@ -96,25 +96,25 @@
                     mx-2 > margin left & right 2
 
                     -->
-                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-facebook text-white"></i>
                 </div>
                 <div class="icon d-flex justify-content-center align-items-center rounded-circle p-2 border border-light mx-2">
-                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-instagram text-white"></i>
                 </div>
                 <div class="icon d-flex justify-content-center align-items-center rounded-circle p-2 border border-light mx-2">
-                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-twitter text-white"></i>
                 </div>
                 <div class="icon d-flex justify-content-center align-items-center rounded-circle p-2 border border-light mx-2">
-                    <i class="fa-brands fa-snapchat"></i>
+                    <i class="fa-brands fa-snapchat text-white"></i>
                 </div>
                 <div class="icon d-flex justify-content-center align-items-center rounded-circle p-2 border border-light mx-2">
-                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-youtube text-white"></i>
                 </div>
                 <div class="icon d-flex justify-content-center align-items-center rounded-circle p-2 border border-light mx-2">
-                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-github text-white"></i>
                 </div>
                 <div class="icon d-flex justify-content-center align-items-center rounded-circle p-2 border border-light mx-2">
-                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-linkedin text-white"></i>
                 </div>
             </div>
             <a href="#">View Portfolio</a>
@@ -161,35 +161,7 @@
         <div id="carouselExampleIndicators" class="carousel slide w-75 mx-auto">
                      <!-- w-75 > width = 75% 
                     mx-auto > left and right auto -->
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <!-- carousel-indicators > دول واخدين position absolute > عشان طالعين فوق الديف كدا 
-                   >  و هروع اغير فيهم و كمان احط فيهم صور 
-                -->
-
-                   <!-- img{} > كدا في ال سي اس اس انا بسيلكت كل الصور اللي في الموقع 
-                   img[alt]{} > كدا انا بسيلكت الصور اللي واخده اتربيوت الاسمه الت فقط 
-                   طيب ينفع يبقي عندي ديف و اعطيه اتربيوت من عندي 
-                   مثال: 
-                   <div hamada="hello"></div>
-                   اه ينفع , في ابديت ظهر في الات تي ام ال ظهر ف 2012 بيسمحلي ب دا 
-                   ليه عملوا كدا , عشان الاتش تي ام ال لغه استاتك سهله التعامل فهما قالوا طيب ما نخلي الديفلوبرز اللي هما احنا يعني 😁
-                   انهم يزودوا اتش تي ام ال و يعملوا الاتربيوت الخاص بيه 
-                   طيب دا هستفاد بيه ف ايه 
-                   هستفاد بيه اكتر ف الفريم ورم انجولار او رياكت 
-                   ف انا علي سبيل المثال عايز احدد الداتا او التجات اللي واخده اتربيوت حماده بس اقدر اعمل كدا 
-                   div[hamada]{}
-                   طيب ليه بشرح الكلام دا طالما مش هنستخدمه 
-                   عشان في ال زراير خنلاقي اتربيوت مش عارفينه ولا اخدناه و هو 
-                   data-bs-slide-to
-                   دا اتربيوت البوتستراب هي اللي عملاه و بيحكي الكلام دا 
-                   عشان لو عنينا جت عليه نبقي عارفين دا ايه ؟
-                   bs > a5tsar l > bootstrap  
-                   هنروح نعمل انسبكت علي البوتن اللي تحت اللي بتقلب عشان ناخده كوبي و نشرح عليه 
-                   -->
-            </div>
+    
             <div class="carousel-inner">
                 <div class="carousel-item active">
                       <!-- ACTIVE > دا اللي بيشتغل و يتنقل ما بين الديف  ف دا اول واحد -->
@@ -261,8 +233,65 @@
                 <!-- <img src="..." class="d-block w-100" alt="..."> -->
                 </div>
             </div>
+                <div class="carousel-indicators position-static mt-3">
+                <!-- carousel-indicators > واخده position absolute 
+                 ف احنا هنغيرها ل podition-static 
+                 ف هتطلع مكانها فوق اصلا 
+                 لان دا مكانها في الات شتي ام ال لانه بيمشي سطر سطر ذي ما احنا عارفين 
+                 ف الحل ايه ان انا اخدها و اخليها تحت خالص 
+                 تحت ال carousel-inner
+                -->
+
+                <!-- bg-danger > شيلها -->
+
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+                    <img src="Assets/Images/1-5.jpg" alt="" class="w-100 rounded-circle ">
+                    <!-- طيب لما اجي اكتب الصوره بلاقيها طلعت برا كدا طيب ليه ؟ 
+                     رغم اني حاطط الصوره جوه ال زورار 
+                     لو عملنا انسبكت هنلاقي الاتي : 
+                     عشان البوتستراب واخد الاتي : 
+                     text-indent: -999px;
+                     يعني ايه دا 
+                     و نروح ندي مثال للبراجراف 
+                     الخلاصه انه بيرحل الكلام او اول سطره يا بالموجب يا بالسالب 
+                     طيب ايه الفرق ما بينه و بين البادينج 
+                     ان البادينج شغال علي كله لكن هو شغال علي اول سطر بس
+                     ف هنغيرها و نخليها 0
+                    -->
+                </button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">
+                      <img src="Assets/Images/1-4.jpg" alt="" class="w-100 rounded-circle">
+                </button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">
+                      <img src="Assets/Images/1-3.jpg" alt="" class="w-100 rounded-circle">
+                </button>
+                <!-- carousel-indicators > دول واخدين position absolute > عشان طالعين فوق الديف كدا 
+                   >  و هروع اغير فيهم و كمان احط فيهم صور 
+                -->
+
+                   <!-- img{} > كدا في ال سي اس اس انا بسيلكت كل الصور اللي في الموقع 
+                   img[alt]{} > كدا انا بسيلكت الصور اللي واخده اتربيوت الاسمه الت فقط 
+                   طيب ينفع يبقي عندي ديف و اعطيه اتربيوت من عندي 
+                   مثال: 
+                   <div hamada="hello"></div>
+                   اه ينفع , في ابديت ظهر في الات تي ام ال ظهر ف 2012 بيسمحلي ب دا 
+                   ليه عملوا كدا , عشان الاتش تي ام ال لغه استاتك سهله التعامل فهما قالوا طيب ما نخلي الديفلوبرز اللي هما احنا يعني 😁
+                   انهم يزودوا اتش تي ام ال و يعملوا الاتربيوت الخاص بيه 
+                   طيب دا هستفاد بيه ف ايه 
+                   هستفاد بيه اكتر ف الفريم ورم انجولار او رياكت 
+                   ف انا علي سبيل المثال عايز احدد الداتا او التجات اللي واخده اتربيوت حماده بس اقدر اعمل كدا 
+                   div[hamada]{}
+                   طيب ليه بشرح الكلام دا طالما مش هنستخدمه 
+                   عشان في ال زراير خنلاقي اتربيوت مش عارفينه ولا اخدناه و هو 
+                   data-bs-slide-to
+                   دا اتربيوت البوتستراب هي اللي عملاه و بيحكي الكلام دا 
+                   عشان لو عنينا جت عليه نبقي عارفين دا ايه ؟
+                   bs > a5tsar l > bootstrap  
+                   هنروح نعمل انسبكت علي البوتن اللي تحت اللي بتقلب عشان ناخده كوبي و نشرح عليه 
+                   -->
+            </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="carousel-control-prev-icon " aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">

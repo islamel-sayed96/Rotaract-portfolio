@@ -75,3 +75,15 @@ header{
     top: 100%;
     /* 100% عشان تنزل تحت  */
 }
+
+
+ /* [data-bs-target]كدا هنا هو بيسلكت العناصر اللي واخده اتربيوت  */
+.carousel-indicators [data-bs-target]{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-indent: 0;
+}
+.icon{
+    color: black;
+}
